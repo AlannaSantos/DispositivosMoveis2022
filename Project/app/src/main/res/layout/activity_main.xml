@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e1c4e7"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:layout_width="343dp"
+        android:layout_height="543dp"
+        android:background="#ead6ee"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="95dp">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="289dp"
+            android:layout_height="46dp"
+            android:layout_margin="20dp"
+            android:gravity="center_horizontal"
+            android:text="Register Account "
+            android:textSize="24sp"
+            android:translationY="30dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName3"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Your Name"
+            android:inputType="textPersonName"
+            android:translationY="95dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPersonName5"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="UserName"
+            android:inputType="textPersonName"
+            android:translationY="140dp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Your Email"
+            android:inputType="textEmailAddress"
+            android:translationY="180dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword2"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:translationY="220dp" />
+
+        <EditText
+            android:id="@+id/editTextTextPassword3"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="Confirm Password"
+            android:inputType="textPassword"
+            android:translationY="260dp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="289dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="#cea0db"
+            android:text="Register"
+            android:translationY="400dp" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
