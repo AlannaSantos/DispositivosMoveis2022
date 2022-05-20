@@ -1,1 +1,0 @@
-# DispositivosMoveis2022
