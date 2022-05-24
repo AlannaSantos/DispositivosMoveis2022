@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/txtTexto"
+        android:layout_width="match_parent"
+        android:layout_height="138dp"
+        android:layout_margin="@dimen/margem"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:elevation="8dp"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/texto" />
+
+        <EditText
+            android:id="@+id/edtTexto"
+            android:layout_width="313dp"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@android:drawable/ic_menu_upload"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen"
+        android:text="@string/letra" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:max="80" />
+
+        <TextView
+            android:id="@+id/textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="0sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen"
+        android:text="@string/estilo" />
+
+    <CheckBox
+        android:id="@+id/chkNegr"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/negrito" />
+    <CheckBox
+        android:id="@+id/chkItal"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/italico" />
+    <CheckBox
+        android:id="@+id/chkMaius"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginLeft="16dp"
+        android:text="@string/maiuscula"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen"
+        android:text="@string/cor"/>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margen"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdVermelho"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/vermelho" />
+
+        <RadioButton
+            android:id="@+id/rdVerde"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/verde" />
+
+        <RadioButton
+            android:id="@+id/rdAzul"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/azul" />
+    </RadioGroup>
+</LinearLayout>
+
