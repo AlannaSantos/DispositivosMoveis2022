@@ -1,23 +1,15 @@
-package com.example.styleproject;
+package com.example.EventosListener;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.text.AllCapsTransformationMethod;
 
 import android.graphics.Color;
 import android.graphics.Typeface;
-import android.graphics.fonts.FontStyle;
 import android.os.Bundle;
-import android.text.InputFilter;
-import android.text.SpannableString;
-import android.text.Spanned;
-import android.text.style.StyleSpan;
-import android.text.style.TypefaceSpan;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
-import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.SeekBar;
