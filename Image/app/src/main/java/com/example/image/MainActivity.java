@@ -7,16 +7,17 @@ import android.os.SystemClock;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
-    EditText editUrl;
-    Button bt_submit;
-    ImageView img_result;
-    ProgressBar pgbProgresso;
+    private EditText editUrl;
+    private ImageButton bt_submit;
+    private ImageView img_result;
+    private ProgressBar pgbProgresso;
 
 
     @Override
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View v) {
         String urlLink  = editUrl.getText().toString();
         if (urlLink.isEmpty()) {
-            Toast.makeText(getApplicationContext(), "Please enter url!",
+            Toast.makeText(getApplicationContext(), "Informe a url!",
                     Toast.LENGTH_SHORT).show();
         } else {
             pgbProgresso.setVisibility(View.VISIBLE);

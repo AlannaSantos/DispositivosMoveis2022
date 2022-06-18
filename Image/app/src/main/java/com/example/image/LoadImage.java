@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class LoadImage extends AsyncTask<String, Void, Bitmap> {
-    ImageView imageView;
+    private ImageView imageView;
 
     public LoadImage(ImageView img_result) {
         this.imageView = img_result;
