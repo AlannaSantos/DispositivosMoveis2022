@@ -1,4 +1,4 @@
-package com.example.fragments;
+package com.example.comunicacaofragments;
 
 import android.os.Bundle;
 
@@ -7,15 +7,14 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.FrameLayout;
-import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link ColorFragment#newInstance} factory method to
+ * Use the {@link ResultFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class ColorFragment extends Fragment {
+public class ResultFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -25,9 +24,10 @@ public class ColorFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
-    private RelativeLayout relLayout;
 
-    public ColorFragment() {
+    private TextView txtTexto;
+
+    public ResultFragment() {
         // Required empty public constructor
     }
 
@@ -37,11 +37,11 @@ public class ColorFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment ColorFragment.
+     * @return A new instance of fragment ResultFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static ColorFragment newInstance(String param1, String param2) {
-        ColorFragment fragment = new ColorFragment();
+    public static ResultFragment newInstance(String param1, String param2) {
+        ResultFragment fragment = new ResultFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -62,14 +62,16 @@ public class ColorFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_color, container, false);
+        View view = inflater.inflate(R.layout.fragment_result, container, false);
 
-        relLayout = view.findViewById(R.id.relLayout);
+        txtTexto = view.findViewById(R.id.txtTexto);
 
         return view;
     }
 
-    public void definirColor(int color) {
-        relLayout.setBackgroundResource(color);
+    public void definirText(String texto){
+       if (texto != null){
+           txtTexto.setText(texto);
+       }
     }
 }

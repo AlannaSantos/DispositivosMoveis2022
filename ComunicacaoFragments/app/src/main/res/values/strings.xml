@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">ComunicacaoFragments</string>
+    <string name="texto">Texto</string>
+    <string name="enviar">Enviar</string>
+</resources>
